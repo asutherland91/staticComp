@@ -4,14 +4,13 @@
 }
 
 body {
-  font-family: PersonifiedUXReg;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-image: url("images/star_background.gif");
   margin: 0px;
 }
 
 .main-section {
   height: 100%;
-  
 }
 
 .navigation-bar {
@@ -19,9 +18,17 @@ body {
   max-width: 100%;
   margin: 0px;
   background-color: black;
+  position: relative;
 }
 
 // cards
+
+.for-centering {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .card-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 275px);
@@ -63,6 +70,26 @@ top: 0px;
   z-index: 7;
 }
 
+.tiny-star-img {
+  height: 20px;
+  width:20px;
+}
+
+.mask-img {
+  height: 20px;
+  width: 30px;
+  margin-right: 5px;
+}
+
+.hat-img {
+  position: absolute;
+  right: 20px;
+  bottom: 29px;
+  height: 50px;
+  width: 50px;
+
+}
+
 .icon-wrapper {
   background-color: rgba(255, 255, 255, 0.714);
   width: 55px;
@@ -74,16 +101,100 @@ top: 0px;
   z-index: 6;
 }
 
+.headline-img {
+  position: absolute;
+  bottom: 25px;
+  right: 70px;
+}
+
+// button
+
+.button-text {
+  color:white;
+  cursor: pointer;
+}
+
+.button-div {
+  display: flex;
+  position: absolute;
+  bottom: 25px;
+  left: 35px;
+}
+
+.button-wrapper {
+  display: flex;
+  margin-right: 30px;
+}
+
+.greeting-line {
+  position: absolute;
+  right: 0;
+}
+
 // text
 
 .code-label, .japanese-codename {
   position: absolute;
   z-index: 6;
-  right: 15px;
-  
+  right: 15px; 
+}
+
+.text-wrapper {
+  margin-left: 15px;
+  margin-right: 15px
+}
+
+.name-tarot {
+  margin-bottom: 0px;
+  font-size: 18px;
+}
+
+.name-tarot {
+  font-size: 18px;
+}
+
+.level-arcana {
+  font-size: 12px;
+}
+
+.name {
+  font-size: 12px;
+  color: #b0adad
+}
+
+.level-number {
+  font-size: 26px;
+  color:red
+}
+
+.about-me {
+  font-size: 12px;
+  color:#b0adad
+}
+
+.japanese-name {
+  font-weight: 100;
+}
+
+.about-me-wrapper {
+  background-color: #31312fbb;
+  padding: 7px;
+}
+
+.button-text-one {
+  color: #93938fbb;
+}
+
+.name-line, .about-me-wrapper, .arcana-wrapper, .level-wrapper {
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 0px;
 }
 
 h1 {
+  font-family: PersonifiedUXReg;
   color:rgb(255, 255, 255);
   text-shadow: -1px 1px 2px #000,
 				  1px 2px 6px #000,
