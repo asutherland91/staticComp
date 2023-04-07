@@ -1,3 +1,5 @@
+$persona-red:#FF2604;
+
 @font-face {
   font-family: PersonifiedUXReg;
   src: url(./images/PersonifiedUXRegular.ttf);
@@ -111,7 +113,19 @@ top: 0px;
 
 .button-text {
   color:white;
+}
+
+.button-text-one {
+  color: #93938fbb;
+}
+
+.button-text, .button-text-one {
   cursor: pointer;
+
+  &:hover {
+    color: $persona-red;
+  }
+
 }
 
 .button-div {
@@ -164,7 +178,7 @@ top: 0px;
 
 .level-number {
   font-size: 26px;
-  color:red
+  color:$persona-red
 }
 
 .about-me {
@@ -179,10 +193,6 @@ top: 0px;
 .about-me-wrapper {
   background-color: #31312fbb;
   padding: 7px;
-}
-
-.button-text-one {
-  color: #93938fbb;
 }
 
 .name-line, .about-me-wrapper, .arcana-wrapper, .level-wrapper {

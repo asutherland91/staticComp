@@ -103,7 +103,17 @@ body {
 
 .button-text {
   color: white;
+}
+
+.button-text-one {
+  color: rgba(147, 147, 143, 0.7333333333);
+}
+
+.button-text, .button-text-one {
   cursor: pointer;
+}
+.button-text:hover, .button-text-one:hover {
+  color: #FF2604;
 }
 
 .button-div {
@@ -154,7 +164,7 @@ body {
 
 .level-number {
   font-size: 26px;
-  color: red;
+  color: #FF2604;
 }
 
 .about-me {
@@ -169,10 +179,6 @@ body {
 .about-me-wrapper {
   background-color: rgba(49, 49, 47, 0.7333333333);
   padding: 7px;
-}
-
-.button-text-one {
-  color: rgba(147, 147, 143, 0.7333333333);
 }
 
 .name-line, .about-me-wrapper, .arcana-wrapper, .level-wrapper {
